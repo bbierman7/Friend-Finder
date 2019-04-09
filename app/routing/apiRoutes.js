@@ -16,11 +16,11 @@ module.exports = function(app) {
 
     //API POST requests
     //Handles when a user submits a form where the data ultimately goes to the server
-    app.post("/api/friends", function(req, res){
+    // app.post("/api/friends", function(req, res){
         
         //Compatability logic
 
-    })
+    // })
 
 
 }
