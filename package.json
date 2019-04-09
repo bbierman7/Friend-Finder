@@ -14,5 +14,13 @@
     "path": "^0.12.7"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbierman7/Friend-Finder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bbierman7/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/bbierman7/Friend-Finder#readme"
 }
