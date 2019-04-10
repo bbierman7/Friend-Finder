@@ -31,7 +31,7 @@
           if (data) {
             alert("Adding friend...")
             console.log(data);
-            alert("you're match is: " + data.name + "and their image is here: " + data.photo);
+            alert("you're match is: " + data.name + " and here is their photo!: " + data.photo);
           }
         });
       });
