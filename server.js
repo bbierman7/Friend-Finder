@@ -13,12 +13,15 @@ var PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.use(express.static("app/public"));
+
+
 //Friends (DATA)
 //==================================================
 // var friends = [
 //     {
 //         name: "Peter",
-//         photo: "https://tse4.mm.bing.net/th?id=OIP.fiq0LOLrRWob1CTNkaepOwHaEK&pid=Api&P=0&w=271&h=153",
+//         photo: "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAq7AAAAJDAwYzI4NTQ4LWYwZWUtNGFkYS1hNTYwLTZjYzkwY2ViZDA3OA.jpg",
 //         scores: [1,2,3,4,5,1,2,3,4,5]
 //     },
 //     {

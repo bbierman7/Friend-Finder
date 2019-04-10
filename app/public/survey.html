@@ -1,397 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Survey</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>Survey</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
+  <div class="container">
+    <h1 class="text">Survey</h1>
+    <hr>
+    <h2 class="text">About You</h2>
+    <form>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Name (Required)</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Link to Photo Image</label>
+        <input type="text" class="form-control" id="photo" placeholder="Enter a link for your profile picture">
+      </div>
+    </form>
+    <hr>
+    <div class="questionArea">
+
+      <div id="q1">
+        <h4><strong>Question 1</strong></h4>
+        <h5>Your mind is always buzzing with unexplored ideas and plans</h5>
+        <div class="form group col-md-3">
+          <select id="inputState" class="form-control form-control-sm">
+            <option selected>Select an option</option>
+            <option name="q1" value="1">1 (Strongly Disagree)</option>
+            <option name="q1" value="2">2</option>
+            <option name="q1" value="3">3</option>
+            <option name="q1" value="4">4</option>
+            <option name="q1" value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <br>
+        <br>
+      </div>
+      <div id="q2">
+        <h4><strong>Question 2</strong></h4>
+        <h5>Generally speaking, you rely more on your experience than your imagination</h5>
+        <div class="form group col-md-3">
+          <select id="inputState" class="form-control form-control-sm">
+            <option selected>Select an option</option>
+            <option name="q2" value="1">1 (Strongly Disagree)</option>
+            <option name="q2" value="2">2</option>
+            <option name="q2" value="3">3</option>
+            <option name="q2" value="4">4</option>
+            <option name="q2" value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div id="q3">
+        <h4><strong>Question 3</strong></h4>
+        <h5>You find it easy to stay relaxed and focused even when there is some pressure.</</h5> <div
+            class="form group col-md-3">
+          <select id="inputState" class="form-control form-control-sm">
+            <option selected>Select an option</option>
+            <option name="q3" value="1">1 (Strongly Disagree)</option>
+            <option name="q3" value="2">2</option>
+            <option name="q3" value="3">3</option>
+            <option name="q3" value="4">4</option>
+            <option name="q3" value="5">5 (Strongly Agree)</option>
+          </select>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div id="q4">
+      <h4><strong>Question 4</strong></h4>
+      <h5>You rarely do something just out of sheer curiosity</h5>
+      <div class="form group col-md-3">
+        <select id="inputState" class="form-control form-control-sm">
+          <option selected>Select an option</option>
+          <option name="q4" value="1">1 (Strongly Disagree)</option>
+          <option name="q4" value="2">2</option>
+          <option name="q4" value="3">3</option>
+          <option name="q4" value="4">4</option>
+          <option name="q4" value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div id="q5">
+      <h4><strong>Question 5</strong></h4>
+      <h5> People can rarely upset you.</h5>
+      <div class="form group col-md-3">
+        <select id="inputState" class="form-control form-control-sm">
+          <option selected>Select an option</option>
+          <option name="q5" value="1">1 (Strongly Disagree)</option>
+          <option name="q5" value="2">2</option>
+          <option name="q5" value="3">3</option>
+          <option name="q5" value="4">4</option>
+          <option name="q5" value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div id="q6">
+      <h4><strong>Question 6</strong></h4>
+      <h5> It is often difficult for you to relate to other people’s feelings.</h5>
+      <div class="form group col-md-3">
+        <select id="inputState" class="form-control form-control-sm">
+          <option selected>Select an option</option>
+          <option name="q6" value="1">1 (Strongly Disagree)</option>
+          <option name="q6" value="2">2</option>
+          <option name="q6" value="3">3</option>
+          <option name="q6" value="4">4</option>
+          <option name="q6" value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div id="q7">
+      <h4><strong>Question 7</strong></h4>
+      <h5>In a discussion, truth should be more important than people’s sensitivities</h5>
+      <div class="form group col-md-3">
+        <select id="inputState" class="form-control form-control-sm">
+          <option selected>Select an option</option>
+          <option name="q7" value="1">1 (Strongly Disagree)</option>
+          <option name="q7" value="2">2</option>
+          <option name="q7" value="3">3</option>
+          <option name="q7" value="4">4</option>
+          <option name="q7" value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div id="q8">
+      <h4><strong>Question 8</strong></h4>
+      <h5>8.) You rarely get carried away by fantasies and ideas.</h5>
+      <div class="form group col-md-3">
+        <select id="inputState" class="form-control form-control-sm">
+          <option selected>Select an option</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div id="q9">
+      <h4><strong>Question 9</strong></h4>
+      <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
+      </h5>
+      <div class="form group col-md-3">
+        <select id="inputState" class="form-control form-control-sm">
+          <option selected>Select an option</option>
+          <option name="q9" value="1">1 (Strongly Disagree)</option>
+          <option name="q9" value="2">2</option>
+          <option name="q9" value="3">3</option>
+          <option name="q9" value="4">4</option>
+          <option name="q9" value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div id="q10">
+      <h4><strong>Question 10</strong></h4>
+      <h5>You feel more energetic after spending time with a group of people.</h5>
+      <div class="form group col-md-3">
+        <select id="inputState" class="form-control form-control-sm">
+          <option selected>Select an option</option>
+          <option name="q10" value="1">1 (Strongly Disagree)</option>
+          <option name="q10" value="2">2</option>
+          <option name="q10" value="3">3</option>
+          <option name="q10" value="4">4</option>
+          <option name="q10" value="5">5 (Strongly Agree)</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary btn-lg" class="text-center" id="submit">Submit</button>
+  </div>
+  <br>
+  <br>
+
+  <div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Best Match</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
     <div class="container">
-        <h1 class="text">Survey</h1>
-        <hr>
-        <h2 class="text">About You</h2>
-        <form>
-            <div class="form-group">
-                <label for="formGroupExampleInput">Name (Required)</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your full name">
-            </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput2">Link to Photo Image</label>
-                <input type="text" class="form-control" id="photo" placeholder="Enter a link for your profile picture">
-            </div>
-        </form>
-        <hr>
-                  <div class="questionArea">
-                        <div class="question">
-                    
-                          <!--1st question-->
-                          <label class="q1">1.) Your mind is always buzzing with unexplored ideas and plans.</label>
-                          <label class="container" id="1a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio1" value="1" id="radio1a"> 1 (Strongly Disagree)
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="2a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio1" value="2" id="radio1b"> 2
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="3a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio1" value="3" id="radio1c"> 3
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="4a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio1" value="4" id="radio1d"> 4
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="5a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio1" value="5" id="radio1e"> 5 (Strongly Agree)
-                            <span class="checkmark"></span>
-                          </label>
-                        </div>
-                        <div class="question">
-                    
-                          <!--2nd question-->
-                          <label class="q1">2.) Generally speaking, you rely more on your experience than your imagination.</label>
-                          <label class="container" id="1a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio2" value="1" id="radio2a"> 1 (Strongly Disagree)
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="2a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio2" value="2" id="radio2b"> 2
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="3a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio2" value="3" id="radio2c"> 3
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="4a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio2" value="4" id="radio2d"> 4
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="5a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio2" value="5" id="radio2e"> 5 (Strongly Agree)
-                            <span class="checkmark"></span>
-                          </label>
-                        </div>
-                        <div class="question">
-                    
-                          <!--3rd question-->
-                          <label class="q1">3.) You find it easy to stay relaxed and focused even when there is some pressure.</label>
-                          <label class="container" id="1a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio3" value="1" id="radio3a"> 1 (Strongly Disagree)
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="2a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio3" value="2" id="radio3b"> 2
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="3a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio3" value="3" id="radio3c"> 3
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="4a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio3" value="4" id="radio3d"> 4
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="5a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio3" value="5" id="radio3e"> 5 (Strongly Agree)
-                            <span class="checkmark"></span>
-                          </label>
-                        </div>
-                        <div class="question">
-                    
-                          <!--4th question-->
-                          <label class="q1">4.) You rarely do something just out of sheer curiosity.</label>
-                          <label class="container" id="1a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio4" value="1" id="radio4a"> 1 (Strongly Disagree)
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="2a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio4" value="2" id="radio4b"> 2
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="3a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio4" value="3" id="radio4c"> 3
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="4a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio4" value="4" id="radio4d"> 4
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="5a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio4" value="5" id="radio4e"> 5 (Strongly Agree)
-                            <span class="checkmark"></span>
-                          </label>
-                        </div>
-                        <div class="question">
-                    
-                          <!--5th question-->
-                          <label class="q1">5.) People can rarely upset you.</label>
-                          <label class="container" id="1a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio5" value="1" id="radio5a"> 1 (Strongly Disagree)
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="2a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio5" value="2" id="radio5b"> 2
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="3a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio5" value="3" id="radio5c"> 3
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="4a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio5" value="4" id="radio5d"> 4
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="5a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio5" value="5" id="radio5e"> 5 (Strongly Agree)
-                            <span class="checkmark"></span>
-                          </label>
-                        </div>
-                        <div class="question">
-                    
-                          <!--6th question-->
-                          <label class="q1">6.) It is often difficult for you to relate to other people’s feelings.</label>
-                          <label class="container" id="1a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio6" value="1" id="radio6a"> 1 (Strongly Disagree)
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="2a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio6" value="2" id="radio6b"> 2
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="3a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio6" value="3" id="radio6c"> 3
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="4a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio6" value="4" id="radio6d"> 4
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="5a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio6" value="5" id="radio6e"> 5 (Strongly Agree)
-                            <span class="checkmark"></span>
-                          </label>
-                        </div>
-                        <div class="question">
-                    
-                          <!--7th question-->
-                          <label class="q1">7.) In a discussion, truth should be more important than people’s sensitivities.</label>
-                          <label class="container" id="1a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio7" value="1" id="radio7a"> 1 (Strongly Disagree)
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="2a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio7" value="2" id="radio7b"> 2
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="3a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio7" value="3" id="radio7c"> 3
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="4a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio7" value="4" id="radio7d"> 4
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="5a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio7" value="5" id="radio7e"> 5 (Strongly Agree)
-                            <span class="checkmark"></span>
-                          </label>
-                        </div>
-                        <div class="question">
-                    
-                          <!--8th question-->
-                          <label class="q1">8.) You rarely get carried away by fantasies and ideas.</label>
-                          <label class="container" id="1a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio8" value="1" id="radio8a"> 1 (Strongly Disagree)
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="2a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio8" value="2" id="radio8b"> 2
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="3a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio8" value="3" id="radio8c"> 3
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="4a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio8" value="4" id="radio8d"> 4
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="5a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio8" value="5" id="radio8e"> 5 (Strongly Agree)
-                            <span class="checkmark"></span>
-                          </label>
-                        </div>
-                        <div class="question">
-                    
-                          <!--9th question-->
-                          <label class="q1">9.) You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
-                          <label class="container" id="1a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio9" value="1" id="radio9a"> 1 (Strongly Disagree)
-                            <span class="checkmark"></span>    
-                          </label>
-                          <label class="container" id="2a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio9" value="2" id="radio9b"> 2
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="3a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio9" value="3" id="radio9c"> 3
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="4a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio9" value="4" id="radio9d"> 4
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="5a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio9" value="5" id="radio9e"> 5 (Strongly Agree)
-                            <span class="checkmark"></span>
-                          </label>
-                        </div>
-                        <div class="question">
-                    
-                          <!--10th question-->
-                          <label class="q1">10.) You feel more energetic after spending time with a group of people.</label>
-                          <label class="container" id="1a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio10" value="1" id="radio10a"> 1 (Strongly Disagree)
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="2a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio10" value="2" id="radio10b"> 2
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="3a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio10" value="3" id="radio10c"> 3
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="4a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio10" value="4" id="radio10d"> 4
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="container" id="5a">&nbsp;&nbsp;&nbsp;
-                            <input type="radio" name="radio10" value="5" id="radio10e"> 5 (Strongly Agree)
-                            <span class="checkmark"></span>
-                          </label>
-                        </div>
-                    
-                        <br>
-                        <br>
-                        <br>
-                        <button type="button" class="btn btn-primary btn-lg" class="text-center" id="submit">Submit</button>
+      <p>
+        <a href="/api/friends">API Friends List</a>
+        |
+        <a href="https://github.com/bbierman7/Friend-Finder">GitHub repo</a>
+      </p>
+    </div>
+  </footer>
 
-    
-    
-                </div>
-                <br>
-                <br>
-
-                <div class="modal" tabindex="-1" role="dialog">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title">Best Match</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              <p>Modal body text goes here.</p>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-        
-        <script type="text/javascript">
-          var config = {
-            ".chosen-select": {},
-            ".chosen-select-deselect": {
-              allow_single_deselect: true
-            },
-            "chosen-select-no-single": {
-              disable_search_threshold: 10
-            },
-              ".chosen-select-no-results": {
-              no_results_text: "Sorry, nothing found for you."
-              },
-              ".chosen-select-width": {
-                width: "95%"
-              }
-          };
-
-          for (var selector in config){
-            $(selector).chosen(config[selector]);
-          }
-
-          //Capture form inputs
-          $("#submit").on("click", function(event){
-            event.preventDefault();
-
-            //Form validation
-            function validateForm(){
-              var isValid = true;
-              $(".form-control").each(function(){
-                if ($(this).val() === ""){
-                  isValid = false;
-                }
-              });
-
-              $(".chosen-select").each(function(){
-                if ($(this).val() === ""){
-                  isValid = false;
-                }
-              });
-              return isValid;
-            }
-
-            //If all required fields are filled
-            if (validateForm()){
-              //Create an object for the user's data
-              var userData = {
-                name: $("name").val(),
-                photo: $("photo").val(),
-                scores: [
-                  $("#q1").val(),
-                  $("#q2").val(),
-                  $("#q3").val(),
-                  $("#q4").val(),
-                  $("#q5").val(),
-                  $("#q6").val(),
-                  $("#q7").val(),
-                  $("#q8").val(),
-                  $("#q9").val(),
-                  $("#q10").val(),
-                ]
-              };
-
-              //AJAX post the data to the friends API
-              $.post("/api/friends", userData, function(data){
-
-                //Grab the result from the AJAX post so that the best match's name and photo are displayed:
-                $("#match-name").text(data.name);
-                $("#match-img").attr("src", data.photo);
-
-                //Show the modal with the best match
-                $("#results-modal").modal("toggle");
-              });
-
-            } else {
-              alert("Please fill out all fields before submitting.");
-            }
-          });
-        </script>
-        <footer class="footer">
-            <div class="container">
-                <p>
-                    <a href="/api/friends">API Friends List</a>
-                        | 
-                    <a href="https://github.com/bbierman7/Friend-Finder">GitHub repo</a>
-                </p>
-            </div>
-        </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
 </body>
+
 </html>
