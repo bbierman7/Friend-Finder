@@ -1,4 +1,4 @@
-
+  //Note to self: this is connected to the client-side HTML survey page
 
     // })
     
@@ -6,7 +6,6 @@
     // $("#test123").on("click", function () {
         $("#submit").on("click", function(event) {
             event.preventDefault();
-            alert("button clicked");
         console.log("clicked submit")
       var newFriend = {
         name: $("#name").val(),
@@ -25,13 +24,15 @@
         ]
       };
 
-      console.log("New Friend: ",newFriend);
+      console.log("Over in app.js with my New Friend: ",newFriend);
 
-      // $.post("api/friends", newFriend, function(data) {
-      //     if (data) {
-      //       alert("Adding friend...")
-      //       console.log(data);
-      //     }
-      //   });
+      $.post("/api/friends", newFriend)
+      .done( function(data) {
+          if (data) {
+            alert("Adding friend...")
+            console.log(data);
+            alert("you're match is: " + data.name + "and their image is here: " + data.photo);
+          }
+        });
       });
     

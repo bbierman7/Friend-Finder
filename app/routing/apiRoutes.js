@@ -18,30 +18,37 @@ module.exports = function(app) {
     //Handles when a user submits a form where the data ultimately goes to the server
     app.post("/api/friends", function(req, res){
         
+        
+        
+        var newFriend = req.body;
+        console.log( "Over in apiRoutes with my New Friend: " + newFriend.name + ":" + newFriend.photo ); 
+        
         // Compatability logic to match up the best-suited friend
-        function friend_arr_diff (friendsArray1, friendsArray2) {
+        var closestMatch = -1;
+        var lowestDiff;
 
-            var a = friendsArray[i], diff = [];
-        
-            for (var i = 0; i < friendsArray1.length; i++) {
-                a[friendsArray1[i]] = true;
+        for (var friendIndex = 0; friendIndex < friendsArray.length; friendIndex++  ){
+            var diff = 0;
+            for (var questionIndex = 0; questionIndex < newFriend.scores.length; questionIndex++){
+                diff += Math.abs(newFriend.scores[questionIndex] - friendsArray[friendIndex].scores[questionIndex]);
             }
-        
-            for (var i = 0; i < friendsArray2.length; i++) {
-                if (a[friendsArray2[i]]) {
-                    delete a[friendsArray2[i]];
-                } else {
-                    a[friendsArray2[i]] = true;
+            if (closestMatch === -1){
+                //first comparison...he wins automatically
+                closestMatch = friendIndex;
+                lowestDiff = diff;
+            } else {
+                // check to see if closer than the closest we've found so far..
+                if (diff < lowestDiff) {
+                    // new closest friend
+                    closestMatch = friendIndex;
+                    lowestDiff = diff;
                 }
             }
-        
-            for (var k in a) {
-                diff.push(k);
-            }
-        
-            return diff;
         }
 
+        console.log("match is " + lowestDiff);
+        res.json(friendsArray[closestMatch]);
+        friendsArray.push(newFriend);
     })
 
 

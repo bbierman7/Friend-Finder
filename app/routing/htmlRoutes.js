@@ -7,6 +7,7 @@ module.exports = function(app){
     });
 
     app.get("/survey", function(req, res){
+        console.log("heading to surbey pgae");
         res.sendFile(path.join(__dirname, "../public/survey.html"));
     });
 
